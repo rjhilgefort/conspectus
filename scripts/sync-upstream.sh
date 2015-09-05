@@ -6,4 +6,5 @@ cd $cwd/../
 
 # Pull in upstream changes
 git remote add upstream git@github.com:ddbullfrog/iCard-Resume.git &>/dev/null
-git pull upstream gh-pages
+git fetch upstream
+git merge upstream/gh-pages
