@@ -1,9 +1,9 @@
 # Site settings
-title: ddbullfrog's blog
-description: ddbullfrog's blog
-favicon: /assets/img/avatar.JPG
-baseurl:
-url: http://ddbullfrog.com
+title: Rob Hilgefort's Resume
+description: Rob Hilgefort's Resume
+favicon: /assets/img/avatar.jpg
+baseurl: ""
+url: http://resume.rob.hilgefort.com
 rss_url: /pages/atom.xml
 
 # Build settings
@@ -11,16 +11,16 @@ markdown: kramdown
 
 # Author settings
 author:
-  name: Dong Liang
-  title: Java Developer
-  address: Auckland, New Zealand
-  email: dongg.liang@gmail.com
-  link: http://ddbullfrog.com
+  name: Rob Hilgefort
+  title: Software Developer Lead
+  address: Cincinnati, OH
+  email: rjhilgefort@gmail.com
+  link: http://rob.hilgefort.me
   weibo:
-  github: ddbullfrog
-  linkedin: ddbullfrog
-  twitter: ddbullfrog
-  gavatar: /assets/img/avatar.JPG
+  github: rjhilgefort
+  linkedin: rjhilgefort
+  twitter: rjhilgefort
+  gavatar: /assets/img/avatar.jpg
   workHistory:
     - work1:
       company: Finzsoft Solutions Ltd
