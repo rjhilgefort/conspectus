@@ -1,10 +1,10 @@
 # Site settings
 title: Rob Hilgefort's Resume
 description: Rob Hilgefort's Resume
-favicon: /assets/img/avatar.jpg
-baseurl: ""
+favicon: /resume/assets/img/avatar.jpg
+baseurl: http://resume.rob.hilgefort.com
 url: http://resume.rob.hilgefort.com
-rss_url: /pages/atom.xml
+rss_url: /resume/pages/atom.xml
 
 # Build settings
 markdown: kramdown
