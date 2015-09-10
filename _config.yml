@@ -1,8 +1,8 @@
 # Site settings
-title: Rob Hilgefort's Resume
-description: Rob Hilgefort's Resume
+title: Rob Hilgefort Resume
+description: Rob Hilgefort Resume
 favicon: /resume/assets/img/avatar.jpg
-baseurl: http://resume.rob.hilgefort.com
+baseurl: ""
 url: http://resume.rob.hilgefort.com
 rss_url: /resume/pages/atom.xml
 
@@ -28,21 +28,21 @@ author:
       title: Java Developer
       started: 2014
       duration: (2014 - Present)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+      description: something
     - work2:
       company: Agfa HealthCare
       location: Shanghai, China
       title: Java Developer
       started: 2012
       duration: (2012 - 2014)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+      description: something
     - work3:
       company: Citigroup Services and Technology (China) Limited
       location: Shanghai, China
       title: Java Developer
       started: 2009
       duration: (2009 - 2012)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+      description: something
   educationHistory:
     - education1:
       organization: Northeastern University
@@ -50,7 +50,6 @@ author:
       major: Software Engineering
       started: 2005
       duration: (2005 - 2009)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
   languages:
     - language1:
       name: Chinese
@@ -63,7 +62,7 @@ author:
       proficiency: Limit
   programmingSkills:
     - skill1:
-      name: HTML
+      name: JavaScript
       percentage: 100%
     - skill2:
       name: Bootstrap
