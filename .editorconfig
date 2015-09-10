@@ -16,3 +16,6 @@ spaces_around_operators = true
 
 [*.hbs]
 insert_final_newline = false
+
+[*.hbs]
+indent_size = 2
