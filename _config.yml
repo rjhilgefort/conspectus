@@ -67,9 +67,10 @@ author:
   programmingSkills:
     - javascript:
       name: "JavaScript"
-      percentage: 100%
+      percentage: 60
     - ruby:
       name: "Ruby" # TODO: When omitted, propercase the key
+      percentage: 5
       # url: "www.foo.com" # TODO: allow for optional links
 
   # languages:
