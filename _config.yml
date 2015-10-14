@@ -68,8 +68,11 @@ author:
     - javascript:
       name: "JavaScript"
       percentage: 100%
+    - ruby:
+      name: "Ruby" # TODO: When omitted, propercase the key
+      # url: "www.foo.com" # TODO: allow for optional links
 
-  languages:
-    - language1:
-      name: English
-      proficiency: Native
+  # languages:
+  #   - language1:
+  #     name: English
+  #     proficiency: Native
