@@ -14,8 +14,10 @@ indent_brace_style = K&R
 curly_bracket_next_line = true
 spaces_around_operators = true
 
-[*.hbs]
+[*.html]
 insert_final_newline = false
-
-[*.hbs]
 indent_size = 2
+
+[*.yml]
+indent_size = 2
+insert_final_newline = false
