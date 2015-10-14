@@ -20,6 +20,7 @@ author:
   github: rjhilgefort
   linkedin: rjhilgefort
   twitter: rjhilgefort
+
   workHistory:
     - work1:
       company: Finzsoft Solutions Ltd
@@ -28,6 +29,7 @@ author:
       started: 2014
       duration: (2014 - Present)
       description: something
+
     - work2:
       company: Agfa HealthCare
       location: Shanghai, China
@@ -35,6 +37,7 @@ author:
       started: 2012
       duration: (2012 - 2014)
       description: something
+
     - work3:
       company: Citigroup Services and Technology (China) Limited
       location: Shanghai, China
@@ -42,6 +45,7 @@ author:
       started: 2009
       duration: (2009 - 2012)
       description: something
+
   educationHistory:
     - college:
       organization: "University of Kentucky"
@@ -59,11 +63,13 @@ author:
         - relatedCoursework:
           description: "Related Coursework: Web Programming, Algorithm Design/Analysis, Software Engineer Training"
           skills: "Java, CGI, Perl, C#, JavaScript, PHP, MySQL"
+
   programmingSkills:
     - javascript:
       name: "JavaScript"
       percentage: 100%
-  # languages:
-  #   - language1:
-  #     name: English
-  #     proficiency: Native
+
+  languages:
+    - language1:
+      name: English
+      proficiency: Native
