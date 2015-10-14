@@ -1,9 +1,7 @@
-# https://github.com/Shopify/liquid/pull/267
-
 module Jekyll
     module AppendPercentFilter
         def append_percent(input)
-            if !input.is_a? String
+            if !input.respond_to?(:to_s)
                 input = input.to_s
             end
             if !input.end_with? "%"

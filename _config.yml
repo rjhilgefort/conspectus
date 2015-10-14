@@ -65,12 +65,13 @@ author:
           skills: "Java, CGI, Perl, C#, JavaScript, PHP, MySQL"
 
   programmingSkills:
-    - javascript:
-      name: "JavaScript"
-      percentage: 60
-    - ruby:
-      name: "Ruby" # TODO: When omitted, propercase the key
-      percentage: 5
+    - name: "JavaScript"
+      percentage: 100
+    - name: "Jekyll"
+      percentage: 20
+      # url: "www.foo.com" # TODO: allow for optional links
+    - name: "Ruby"
+      percentage: 15
       # url: "www.foo.com" # TODO: allow for optional links
 
   # languages:
