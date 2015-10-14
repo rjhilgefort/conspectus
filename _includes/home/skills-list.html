@@ -1,0 +1,31 @@
+{% comment %}
+  skills-list
+
+  @include {String} title
+  @include {Array} skills
+  @include {String} [empty-skills]
+{% endcomment %}
+
+
+{% if include.skills != empty %}
+
+  {% include home/_core/title-with-icon.html title=include.title icon="fa-globe" %}
+
+  <div class="grid-block">
+    <ul class="list-unstyled list-strip">
+      {% for skill in include.skills %}
+          <li>
+            <i class="fa fa-check"></i>
+            {{ skill.name | default: "[Unspecified]" }}
+            {% if skill.proficiency %}
+              <span class="badge badge-green badge-right-float">
+                {{ skill.proficiency }}
+              </span>
+            {% endif %}
+          </li>
+      {% else %}
+        {% include home/_core/empty-skills.html empty-skills=include.empty-skills %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

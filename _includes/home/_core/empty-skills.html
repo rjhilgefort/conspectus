@@ -1,0 +1,10 @@
+{% comment %}
+  empty-skills
+
+  @include {String} empty-skills
+{% endcomment %}
+
+
+<li>
+  {{ include.empty-skills | default: "[No items to show]" }}
+</li>

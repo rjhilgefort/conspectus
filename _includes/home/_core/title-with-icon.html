@@ -1,0 +1,10 @@
+{% comment %}
+ title-with-icon
+
+  @include {String} title
+  @include {String} icon
+{% endcomment %}
+<h3 class="title with-icon">
+  <span class="fa {{ include.icon | default: 'fa-question' }} cat-title"></span>
+  {{ include.title | default: "[Unspecified]"}}
+</h3>
