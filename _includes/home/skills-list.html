@@ -3,7 +3,7 @@
 
   @include {String} title
   @include {Array} skills
-  @include {String} [empty-skills]
+  @include {String} [empty]
 {% endcomment %}
 
 
@@ -24,7 +24,7 @@
           {% endif %}
         </li>
       {% else %}
-        {% include home/_core/empty-skills.html empty-skills=include.empty-skills %}
+        {% include home/_core/empty.html empty=include.empty %}
       {% endfor %}
     </ul>
   </div>

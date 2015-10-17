@@ -1,0 +1,10 @@
+{% comment %}
+  @name empty
+
+  @include {String} empty
+{% endcomment %}
+
+
+<li>
+  {{ include.empty | default: "[No items to show]" }}
+</li>

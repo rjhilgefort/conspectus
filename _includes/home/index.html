@@ -1,3 +1,5 @@
+{% assign empty = "Oops, looks like I messed up the config" %}
+
 <div class="container-fluid">
   <div class="row-fluid">
 
@@ -93,15 +95,13 @@
 
     <div class="col-md-4">
 
-      {% assign empty-skills = "Oops, looks like I messed up the config" %}
-
       <!-- Programming Skills -->
-      {% include home/skills-chart.html title="Programming Skills" skills=site.author.programmingSkills empty-skills=empty-skills %}
+      {% include home/skills-chart.html title="Programming Skills" skills=site.author.programmingSkills empty=empty %}
 
       <div class="deviter"></div>
 
       <!-- Languages -->
-      {% include home/skills-list.html title="Languages" skills=site.author.languages empty-skills=empty-skills%}
+      {% include home/skills-list.html title="Languages" skills=site.author.languages empty=empty %}
 
       <div class="deviter"></div>
 
