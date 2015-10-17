@@ -50,46 +50,8 @@
         </ul>
       {% endif %}
 
-      {% if site.author.educationHistory %}
-        <h3 class="title with-icon"><span class="fa fa-book cat-title"></span>Education History</h3>
-        <ul class="timeline">
-          {% for education in site.author.educationHistory %}
-            <li class="timeline-inverted">
-              {% if education.started %}
-                <div class="timeline-badge info">{{ education.started }}</div>
-              {% endif %}
-              <div class="timeline-panel grid-block">
-                <div class="timeline-heading">
-                  {% if education.organization %}
-                    <h4 class="timeline-title">{{ education.organization }}</h4>
-                  {% endif %}
-                  <p>
-                    <small class="text-muted">
-                      {% if education.degree %}
-                        {{ education.degree }}
-                      {% endif %}
-                      {% if education.major %}
-                        , {{ education.major }}
-                      {% endif %}
-                    </small>
-                  </p>
-                  {% if education.duration %}
-                    <p>
-                      <small class="text-muted"><i class="fa fa-calendar"></i> {{ education.duration }}
-                      </small>
-                    </p>
-                  {% endif %}
-                </div>
-                <div class="timeline-body">
-                  {% if education.description %}
-                    <p>{{ education.description }}</p>
-                  {% endif %}
-                </div>
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+      <!-- Education History -->
+      {% include home/history.html title="Education History" history=site.author.educationHistory empty=empty %}
 
     </div>
 

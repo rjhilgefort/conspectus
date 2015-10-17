@@ -47,7 +47,7 @@ author:
       description: something
 
   educationHistory:
-    - college:
+    - UK:
       organization: "University of Kentucky"
       # location: Lexington, Ky
       degree: "Bachelor"
@@ -59,6 +59,7 @@ author:
       # ended: 2010 # When implemented, remove `duration`
       duration: "(2005 - 2010)"
       # description: "" # non-existance would do something special to bullets styling
+      description: "Something amazing"
       bullets:
         - relatedCoursework:
           description: "Related Coursework: Web Programming, Algorithm Design/Analysis, Software Engineer Training"
