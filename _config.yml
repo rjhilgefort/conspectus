@@ -56,9 +56,7 @@ author:
       #   - Computer Science
       #   - Psychology
       started: 2005
-      # ended: 2010 # When implemented, remove `duration`
-      duration: "(2005 - 2010)"
-      # description: "" # non-existance would do something special to bullets styling
+      ended: 2010
       description: "Something amazing"
       bullets:
         - relatedCoursework:

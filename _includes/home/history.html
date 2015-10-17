@@ -27,9 +27,11 @@
                 {{ value.degree | default: "[unknown]" }}, {{ value.major | default: "[unknown]" }}
               </small>
             </p>
-            {% if value.duration %}
+            {% if value.ended %}
               <p>
-                <small class="text-muted"><i class="fa fa-calendar"></i> {{ value.duration }}
+                <small class="text-muted">
+                  <i class="fa fa-calendar"></i>
+                  ({{ value.started }} - {{ value.ended }})
                 </small>
               </p>
             {% endif %}
