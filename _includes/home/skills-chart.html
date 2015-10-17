@@ -7,23 +7,27 @@
 {% endcomment %}
 
 
-{% include home/_core/title-with-icon.html title=include.title icon="fa-code" %}
+{% if include.skills and include.skills != empty %}
 
-<div class="grid-block">
-  <ul class="list-unstyled list-skills">
-    {% for skill in include.skills %}
-    <li>
-        <span class="caption-skill">
-          {{ skill.name | default: "[none]" }}
-        </span>
-        <div class="progress">
-          <div class="progress-bar" style="width: {{ skill.percentage | append_percent }}">
-            <span>{{ skill.percentage }}%</span>
+  {% include home/_core/title-with-icon.html title=include.title icon="fa-code" %}
+
+  <div class="grid-block">
+    <ul class="list-unstyled list-skills">
+      {% for skill in include.skills %}
+        <li>
+          <span class="caption-skill">
+            {{ skill.name | default: "[none]" }}
+          </span>
+          <div class="progress">
+            <div class="progress-bar" style="width: {{ skill.percentage | append_percent }}">
+              <span>{{ skill.percentage }}%</span>
+            </div>
           </div>
-        </div>
-      </li>
-    {% else %}
-      {% include home/_core/empty-skills.html empty-skills=include.empty-skills %}
-    {% endfor %}
-  </ul>
-</div>
+        </li>
+      {% else %}
+        {% include home/_core/empty-skills.html empty-skills=include.empty-skills %}
+      {% endfor %}
+    </ul>
+  </div>
+
+{% endif %}
