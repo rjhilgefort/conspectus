@@ -1,5 +1,3 @@
-{% assign empty = "Oops, looks like I messed up the config" %}
-
 <div class="container-fluid">
   <div class="row-fluid">
 
@@ -9,19 +7,19 @@
       {% include home/history.html title="Work History" icon="fa-briefcase" history=site.author.workHistory %}
 
       <!-- Education History -->
-      {% include home/history.html title="Education History" icon="fa-book" history=site.author.educationHistory empty=empty %}
+      {% include home/history.html title="Education History" icon="fa-book" history=site.author.educationHistory %}
 
     </div>
 
     <div class="col-md-4">
 
       <!-- Programming Skills -->
-      {% include home/skills-chart.html title="Programming Skills" icon="fa-code" skills=site.author.programmingSkills empty=empty %}
+      {% include home/skills-chart.html title="Programming Skills" icon="fa-code" skills=site.author.programmingSkills %}
 
       <div class="deviter"></div>
 
       <!-- Languages -->
-      {% include home/skills-list.html title="Languages" icon="fa-globe" skills=site.author.languages empty=empty %}
+      {% include home/skills-list.html title="Languages" icon="fa-globe" skills=site.author.languages %}
 
       <div class="deviter"></div>
 
