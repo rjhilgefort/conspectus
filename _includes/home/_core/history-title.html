@@ -1,0 +1,15 @@
+{% comment %}
+  @name history-title
+
+  @include {String} title
+  @include {String} [title2]
+{% endcomment %}
+
+
+{% if include.title %}
+  <p>
+    <small class="text-muted">
+      {{ include.title | default }}{% if include.title2 %}, {{ include.title2 }}{% endif %}
+    </small>
+  </p>
+{% endif %}

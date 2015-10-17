@@ -15,29 +15,46 @@
   <ul class="timeline">
     {% for value in include.history %}
       <li class="timeline-inverted">
+
         <div class="timeline-badge info">
           {{ value.started | default }}
         </div>
+
         <div class="timeline-panel grid-block">
           <div class="timeline-heading">
-            <h4 class="timeline-title">{{ value.organization | default }}</h4>
-            <p>
-              <small class="text-muted">
-                {{ value.degree | default }}, {{ value.major | default }}
-              </small>
-            </p>
-            {% if value.ended %}
+
+            <h4 class="timeline-title">
+              {{ value.name | default }}
+            </h4>
+
+            {% comment %}
+              Don't specify both of these, only one should show. This was done to handle the only difference
+              between the two types of history (and still just use one component to render both)
+              TODO: Make a parent template that allows you to dynamically namespace either
+            {% endcomment %}
+            {% include home/_core/history-title.html title=value.degree title2=value.major %}
+            {% include home/_core/history-title.html title=value.title %}
+
+            {% if value.location or value.ended %}
               <p>
                 <small class="text-muted">
-                  <i class="fa fa-calendar"></i>
-                  ({{ value.started }} - {{ value.ended }})
+                  {% if value.ended %}
+                    <i class="fa fa-calendar"></i>
+                    ({{ value.started }} - {{ value.ended }})
+                  {% endif %}
+                  {% if value.location %}
+                    &nbsp;| <i class="fa fa-map-marker"></i> {{ value.location }}
+                  {% endif %}
                 </small>
               </p>
             {% endif %}
+
           </div>
+
           <div class="timeline-body">
             <p>{{ value.description | default }}</p>
           </div>
+
         </div>
       </li>
     {% else %}

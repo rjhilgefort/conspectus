@@ -23,33 +23,33 @@ author:
 
   workHistory:
     - work1:
-      company: Finzsoft Solutions Ltd
+      name: Finzsoft Solutions Ltd
       location: Auckland, New Zealand
       title: Java Developer
       started: 2014
-      duration: (2014 - Present)
+      ended: Present
       description: something
 
     - work2:
-      company: Agfa HealthCare
+      name: Agfa HealthCare
       location: Shanghai, China
       title: Java Developer
       started: 2012
-      duration: (2012 - 2014)
+      ended: 2014
       description: something
 
     - work3:
-      company: Citigroup Services and Technology (China) Limited
+      name: Citigroup Services and Technology (China) Limited
       location: Shanghai, China
       title: Java Developer
       started: 2009
-      duration: (2009 - 2012)
+      ended: 2012
       description: something
 
   educationHistory:
     - UK:
-      organization: "University of Kentucky"
-      # location: Lexington, Ky
+      name: "University of Kentucky"
+      location: "Lexington, Ky"
       degree: "Bachelor"
       major: "Philosophy"
       # minor:
@@ -57,11 +57,11 @@ author:
       #   - Psychology
       started: 2005
       ended: 2010
-      description: "Something amazing"
-      bullets:
-        - relatedCoursework:
-          description: "Related Coursework: Web Programming, Algorithm Design/Analysis, Software Engineer Training"
-          skills: "Java, CGI, Perl, C#, JavaScript, PHP, MySQL"
+      description: "Something amazing" # non-existance would do something special to bullets styling
+      # bullets:
+      #   - relatedCoursework:
+      #     description: "Related Coursework: Web Programming, Algorithm Design/Analysis, Software Engineer Training"
+      #     skills: "Java, CGI, Perl, C#, JavaScript, PHP, MySQL"
 
   programmingSkills:
     - name: "JavaScript"
