@@ -1,0 +1,13 @@
+{% comment %}
+  @name location
+
+  @include {String} title
+  @include {String} icon
+  @include {String} location
+{% endcomment %}
+
+
+{% include home/_core/title-with-icon.html title=include.title icon=include.icon %}
+<div class="grid-block">
+  <iframe src="https://www.google.com/maps/embed/v1/place?q={{ include.location }}&key=AIzaSyClEWLh20lxrQBFR7omuuVESviszPxONyk" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+</div>

@@ -14,7 +14,8 @@ author:
   gavatar: /assets/img/avatar.jpg
   name: Rob Hilgefort
   title: Lead Software Developer
-  address: Cincinnati, OH
+  address: "Cincinnati, OH"
+  location: cincinnati
   email: rjhilgefort@gmail.com
   link: http://rob.hilgefort.me
   github: rjhilgefort
