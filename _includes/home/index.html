@@ -51,19 +51,19 @@
       {% endif %}
 
       <!-- Education History -->
-      {% include home/history.html title="Education History" history=site.author.educationHistory empty=empty %}
+      {% include home/history.html title="Education History" icon="fa-book" history=site.author.educationHistory empty=empty %}
 
     </div>
 
     <div class="col-md-4">
 
       <!-- Programming Skills -->
-      {% include home/skills-chart.html title="Programming Skills" skills=site.author.programmingSkills empty=empty %}
+      {% include home/skills-chart.html title="Programming Skills" icon="fa-code" skills=site.author.programmingSkills empty=empty %}
 
       <div class="deviter"></div>
 
       <!-- Languages -->
-      {% include home/skills-list.html title="Languages" skills=site.author.languages empty=empty %}
+      {% include home/skills-list.html title="Languages" icon="fa-globe" skills=site.author.languages empty=empty %}
 
       <div class="deviter"></div>
 

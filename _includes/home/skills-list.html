@@ -2,6 +2,7 @@
   @name skills-list
 
   @include {String} title
+  @include {String} icon
   @include {Array} skills
   @include {String} [empty]
 {% endcomment %}
@@ -9,7 +10,7 @@
 
 {% if include.skills and include.skills != empty %}
 
-  {% include home/_core/title-with-icon.html title=include.title icon="fa-globe" %}
+  {% include home/_core/title-with-icon.html title=include.title icon=include.icon %}
 
   <div class="grid-block">
     <ul class="list-unstyled list-strip">

@@ -2,6 +2,7 @@
   @name history
 
   @include {String} title
+  @include {String} icon
   @include {Array} history
   @include {String} [empty]
 {% endcomment %}
@@ -9,7 +10,7 @@
 
 {% if include.history and include.history != empty %}
 
-  {% include home/_core/title-with-icon.html title=include.title icon="fa-book" %}
+  {% include home/_core/title-with-icon.html title=include.title icon=include.icon %}
 
   <ul class="timeline">
     {% for value in include.history %}
