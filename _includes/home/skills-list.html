@@ -7,7 +7,7 @@
 {% endcomment %}
 
 
-{% if include.skills != empty %}
+{% if include.skills and include.skills != empty %}
 
   {% include home/_core/title-with-icon.html title=include.title icon="fa-globe" %}
 
