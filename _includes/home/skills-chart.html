@@ -16,7 +16,7 @@
       {% for skill in include.skills %}
         <li>
           <span class="caption-skill">
-            {{ skill.name | default: "[none]" }}
+            {{ skill.name | default }}
           </span>
           <div class="progress">
             <div class="progress-bar" style="width: {{ skill.percentage | append_percent }}">

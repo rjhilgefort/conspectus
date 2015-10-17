@@ -16,7 +16,7 @@
       {% for skill in include.skills %}
         <li>
           <i class="fa fa-check"></i>
-          {{ skill.name | default: "[Unspecified]" }}
+          {{ skill.name | default }}
           {% if skill.proficiency %}
             <span class="badge badge-green badge-right-float">
               {{ skill.proficiency }}
